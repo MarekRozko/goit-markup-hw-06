@@ -72,28 +72,29 @@
                                 <form class="form">
                                     <p class="text-label list">Оставьте свои данные, мы вам перезвоним</p>
                                     <div class="form-field">
-                                        <label for="name">Имя</label>
-                                        <input type="text" name="user-name" id="name">
-                                            <svg class="icon-name" width="12" height="12">
-                                                <use href=""></use>
+                                        <label for="name" class="form-label">Имя</label>
+                                        <input class="form-input" type="text" name="name" id="name">
+                                            <svg class="icon-modal">
+                                                <use href="./images/sprite-original.svg#icon-person-black"></use>
                                             </svg>
-                                        
                                     </div>
                                     
                                     <div class="form-field">
                                         <label for="tel">Телефон</label>
                                         <input type="tel" name="tel" id="tel">
-                                        <svg class="icon-name" width="13"  height="13">
-                                            <use href=""></use>
-                                        </svg>
+                                            <svg class="icon-modal">
+                                                <use href="./images/sprite-original.svg#icon-phone-black"></use>
+                                            </svg>
                                     </div>
 
                                     <div class="form-field">
                                         <label for="mail">Почта</label>
                                         <input type="email" name="mail" id="mail">
-                                        <svg class="icon-name" width="15" height="12">
-                                            <use href=""></use>
+                                       
+                                        <svg class="icon-modal">
+                                            <use href="./images/sprite-original.svg#icon-email-black"></use>
                                         </svg>
+                                       
                                     </div>
 
                                     <div class="form-feedback">
@@ -103,8 +104,14 @@
                                    
                                         
                                         <div class="form-policy">
-                                            <input type="checkbox" name="policy" id="policy">
-                                            <label for="policy"><span class="text-politics list">Соглашаюсь с рассылкой и принимаю <a class="link-modal" href="">Условия договора</a></span></label>
+                                            <label class="checkbox-label">
+                                                <input class="checkbox" type="checkbox" name="policy">  
+                                                <svg class="icon-check" width="16" height="15">
+                                                    <use href="./images/sprite-original.svg#icon-check-box"></use>
+                                                </svg>
+                                                Соглашаюсь с рассылкой и принимаю  <a class="link-policy" href="">Условия договора</a>
+                                            </label>
+                                            
                                         </div>
                                     
                                     
