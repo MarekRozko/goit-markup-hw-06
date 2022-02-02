@@ -344,6 +344,7 @@ textarea {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .backdrop {
   position: fixed;
@@ -358,6 +359,7 @@ textarea {
 }
 .modal {
   position: absolute;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
