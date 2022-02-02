@@ -116,6 +116,7 @@ html {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 14px;
+  font-weight: 500;
 }
 /* contact hover */
 .contact-link-icon:hover,
@@ -232,11 +233,7 @@ textarea {
 .link-modal {
   color: var(--accent-color);
 }
-.form {
-  width: 528px;
-  padding: 40px;
-  margin: 0;
-}
+
 .form-field {
   position: relative;
   display: flex;
@@ -310,10 +307,9 @@ textarea {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-policy {
-  margin-bottom: 30px;
-}
+
 .link-policy {
+  margin-left: 4px;
   color: #2196f3;
   text-decoration: underline;
 }
@@ -326,14 +322,9 @@ textarea {
   background-position: center;
   border-radius: 2px;
 }
-.checkbox:focus-visible + .icon-check {
-  fill: #2196f3;
-  background-color: #2196f3;
-  background-image: url(../images/full-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-  background-position: center;
-  border-radius: 2px;
+.checkbox:focus-visible + .icon-check,
+.checkbox:hover + .icon-check {
+  fill: var(--accent-color);
 }
 .checkbox-label {
   display: flex;
@@ -341,6 +332,7 @@ textarea {
   justify-content: center;
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 30px;
 }
 .icon-check {
   margin-right: 8px;
@@ -348,10 +340,7 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons-submit:hover,
-.buttons-submit:focus {
-  background-color: #188ce8;
-}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -374,7 +363,7 @@ textarea {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  /* padding: 40px 40px; */
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -722,7 +711,7 @@ a.team-link:focus {
 }
 /* subscribe */
 .mailing-list {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .subscribe {
   display: flex;
@@ -739,20 +728,18 @@ a.team-link:focus {
 .mailing-list input {
   height: 50px;
   width: 358px;
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: #2f303a;
   cursor: pointer;
+  color: #ffffff;
 }
-.subscribe input:focus {
-  background-color: #ffffff;
-}
+
 .mailing-list ::placeholder {
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   font-size: 16px;
   line-height: 1.25;
   display: flex;
